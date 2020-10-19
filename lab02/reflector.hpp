@@ -4,7 +4,7 @@
 
 class Reflector : public Encryptor {
 public:
-	char map(char c) override;
+	uint8_t map(uint8_t c) override;
 
 	static constexpr int REFLECTOR_OFFSET = 13;
 };

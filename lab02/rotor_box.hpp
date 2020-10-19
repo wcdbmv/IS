@@ -10,7 +10,7 @@ public:
 	RotorBox() = default;
 
 	void add(Rotor&& rotor);
-	char map(char c) override;
+	uint8_t map(uint8_t c) override;
 
 private:
 	std::list<Rotor> rotors_;

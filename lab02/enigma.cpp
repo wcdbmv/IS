@@ -7,14 +7,14 @@ void Enigma::setup(int argc, char** argv) {
 }
 
 void Enigma::operate() {
-	for (char ch; IoModule::input(ch);) {
-		if (!isupper(ch)) {
+	for (uint8_t byte; IoModule::input(byte);) {
+		if (!isupper(byte)) {
 			throw std::invalid_argument("Char is not upper");
 		}
-		ch = plugboard_.map(ch);
-		ch = rotorbox_.map(ch);
-		ch = plugboard_.map(ch);
-		IoModule::output(ch);
+		byte = plugboard_.map(byte);
+		byte = rotorbox_.map(byte);
+		byte = plugboard_.map(byte);
+		IoModule::output(byte);
 	}
 }
 

@@ -8,7 +8,7 @@
 
 class Rotor : public Encryptor, public Configurable {
 public:
-	char map(char c) override;
+	uint8_t map(uint8_t c) override;
 	void connect(int from, int to) override;
 	bool turn_next();
 

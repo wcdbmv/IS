@@ -9,7 +9,7 @@
 class Plugboard : public Encryptor, public Configurable {
 public:
 	void reset();
-	char map(char c) override;
+	uint8_t map(uint8_t c) override;
 	void connect(int from, int to) override;
 
 private:

@@ -52,10 +52,10 @@ void IoModule::setup_rotorbox(RotorBox& rotorbox) {
 	}
 }
 
-bool IoModule::input(char &ch) {
+bool IoModule::input(uint8_t &ch) {
 	return static_cast<bool>(std::cin >> std::skipws >> ch);
 }
 
-void IoModule::output(char ch) {
+void IoModule::output(uint8_t ch) {
 	std::cout << ch;
 }

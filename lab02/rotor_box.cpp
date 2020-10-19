@@ -6,7 +6,7 @@ void RotorBox::add(Rotor&& rotor) {
 	rotors_.push_back(std::move(rotor));
 }
 
-char RotorBox::map(char c) {
+uint8_t RotorBox::map(uint8_t c) {
 	for (auto& rotor : rotors_) {
 		c = rotor.map(c);
 	}

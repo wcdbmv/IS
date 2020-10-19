@@ -11,8 +11,8 @@ public:
 	void setup_plugboard(Plugboard& plugboard);
 	void setup_rotorbox(RotorBox& rotorbox);
 
-	static bool input(char &ch);
-	static void output(char ch);
+	static bool input(uint8_t &ch);
+	static void output(uint8_t ch);
 
 private:
 	std::list<std::string> rfiles_;

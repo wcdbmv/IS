@@ -1,6 +1,6 @@
 #include "plugboard.hpp"
 
-char Plugboard::map(char c) {
+uint8_t Plugboard::map(uint8_t c) {
 	return int_to_upper(char_wire_[upper_to_int(c)]);
 }
 

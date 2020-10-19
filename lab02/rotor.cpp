@@ -1,6 +1,6 @@
 #include "rotor.hpp"
 
-char Rotor::map(char c) {
+uint8_t Rotor::map(uint8_t c) {
 	const auto pos = static_cast<size_t>(rotate(upper_to_int(c), times_rotated_));
 	const auto match = rev_map_ ? wire_from_[pos] : wire_to_[pos];
 	rev_map_ = !rev_map_;
