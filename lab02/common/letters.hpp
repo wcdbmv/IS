@@ -12,6 +12,6 @@ static constexpr uint8_t int_to_upper(int n) {
 	return static_cast<uint8_t>((n + ALPHABET_SIZE) % ALPHABET_SIZE + 'A');
 }
 
-static constexpr int rotate(int n, int rot) {
+static constexpr int rotate_letter(int n, int rot) {
 	return (n + rot + ALPHABET_SIZE) % ALPHABET_SIZE;
 }

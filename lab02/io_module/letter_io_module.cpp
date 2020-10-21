@@ -23,7 +23,7 @@ void LetterIoModule::setup_rotorbox(std::unique_ptr<RotorBox>& rotorbox) {
 	}
 }
 
-bool LetterIoModule::input(uint8_t &letter) {
+bool LetterIoModule::input(uint8_t& letter) {
 	return static_cast<bool>(std::cin >> std::skipws >> letter);
 }
 

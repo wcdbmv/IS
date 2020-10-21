@@ -29,36 +29,49 @@ add_compile_options(
 
 set(
 	HEADERS
+	common/bytes.hpp
 	common/configurable.hpp
 	common/encryptor.hpp
 	common/letters.hpp
 	common/reverse.hpp
+	enigma/byte_enigma.hpp
 	enigma/enigma.hpp
 	enigma/letter_enigma.hpp
+	io_module/byte_io_module.cpp
 	io_module/io_module.hpp
 	io_module/letter_io_module.hpp
+	plugboard/byte_plugboard.hpp
 	plugboard/letter_plugboard.hpp
 	plugboard/plugboard.hpp
+	reflector/byte_reflector.hpp
 	reflector/letter_reflector.hpp
 	reflector/reflector.hpp
+	rotor/byte_rotor.hpp
 	rotor/letter_rotor.hpp
 	rotor/rotor.hpp
+	rotor_box/byte_rotor_box.hpp
 	rotor_box/letter_rotor_box.hpp
 	rotor_box/rotor_box.hpp
 )
 
 set(
 	SOURCES
+	enigma/byte_enigma.cpp
 	enigma/enigma.cpp
 	enigma/letter_enigma.cpp
+	io_module/byte_io_module.cpp
 	io_module/io_module.cpp
 	io_module/letter_io_module.cpp
+	plugboard/byte_plugboard.cpp
 	plugboard/letter_plugboard.cpp
 	plugboard/plugboard.cpp
+	reflector/byte_reflector.cpp
 	reflector/letter_reflector.cpp
 	reflector/reflector.cpp
+	rotor/byte_rotor.cpp
 	rotor/letter_rotor.cpp
 	rotor/rotor.cpp
+	rotor_box/byte_rotor_box.cpp
 	rotor_box/letter_rotor_box.cpp
 	rotor_box/rotor_box.cpp
 )

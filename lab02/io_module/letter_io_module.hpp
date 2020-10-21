@@ -3,6 +3,7 @@
 #include "io_module.hpp"
 
 class LetterIoModule final : public IoModule {
+public:
 	void setup_rotorbox(std::unique_ptr<RotorBox>& rotorbox) final;
 
 	bool input(uint8_t& letter) final;
